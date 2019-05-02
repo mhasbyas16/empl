@@ -1,0 +1,25 @@
+[06-Dec-2018 06:33:33 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:34:00 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:34:54 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:35:03 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:35:12 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:35:16 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:35:36 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:35:39 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:19 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:19 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:29 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:29 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:31 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:33 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:43 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:44 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:46 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:46 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:53 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:36:53 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:38:05 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:38:25 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[06-Dec-2018 06:39:34 UTC] PHP Warning:  Unterminated comment starting line 674 in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/PresenceController.php on line 674
+[26-Apr-2019 06:39:59 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/UsersController.php on line 3
+[26-Apr-2019 06:41:17 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/ibsyn130/public_html/empl/laravel/app/Http/Controllers/UsersController.php on line 3
