@@ -15,8 +15,8 @@ class PresenceController extends Controller
 		if (Session::has('login')) {
 			return redirect('/admin');
 		}else{
-			//return view('index');
-			 return Redirect::to('https://www.attrack.ib-synergy.co.id/index');
+			return view('index');
+			// return Redirect::to('https://www.attrack.ib-synergy.co.id/index');
 		}
 	}
 	public function Indexs(){

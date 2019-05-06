@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="{{url('assets/css/materializes.css')}}">
+    <link rel="stylesheet" href="<?php echo e(url('assets/css/materializes.css')); ?>">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -9,54 +9,54 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="{{url('assets/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="<?php echo e(url('assets/plugins/bootstrap/css/bootstrap.css')); ?>" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="{{url('assets/plugins/node-waves/waves.css')}}" rel="stylesheet" />
+    <link href="<?php echo e(url('assets/plugins/node-waves/waves.css')); ?>" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="{{url('assets/plugins/animate-css/animate.css')}}" rel="stylesheet" />
+    <link href="<?php echo e(url('assets/plugins/animate-css/animate.css')); ?>" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="{{url('assets/plugins/morrisjs/morris.css')}}" rel="stylesheet" />
+    <link href="<?php echo e(url('assets/plugins/morrisjs/morris.css')); ?>" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="{{url('assets/css/style.css')}}" rel="stylesheet">
+    <link href="<?php echo e(url('assets/css/style.css')); ?>" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="{{url('assets/css/themes/all-themes.css')}}" rel="stylesheet" />
+    <link href="<?php echo e(url('assets/css/themes/all-themes.css')); ?>" rel="stylesheet" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
     <!-- Select Plugin Js -->
-    <script src="{{url('assets/plugins/bootstrap-select/js/bootstrap-select.js')}}"></script>
+    <script src="<?php echo e(url('assets/plugins/bootstrap-select/js/bootstrap-select.js')); ?>"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="{{url('assets/plugins/jquery-slimscroll/jquery.slimscroll.js')}}"></script>
+    <script src="<?php echo e(url('assets/plugins/jquery-slimscroll/jquery.slimscroll.js')); ?>"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="{{url('assets/plugins/node-waves/waves.js')}}"></script>
+    <script src="<?php echo e(url('assets/plugins/node-waves/waves.js')); ?>"></script>
 
     <!-- Jquery CountTo Plugin Js -->
-    <script src="{{url('assets/plugins/jquery-countto/jquery.countTo.js')}}"></script>
+    <script src="<?php echo e(url('assets/plugins/jquery-countto/jquery.countTo.js')); ?>"></script>
 
     <!-- Morris Plugin Js -->
-    <script src="{{url('assets/plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{url('assets/plugins/morrisjs/morris.js')}}"></script>
+    <script src="<?php echo e(url('assets/plugins/raphael/raphael.min.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/plugins/morrisjs/morris.js')); ?>"></script>
 
     <!-- Flot Charts Plugin Js -->
-    <script src="{{url('assets/plugins/flot-charts/jquery.flot.js')}}"></script>
-    <script src="{{url('assets/plugins/flot-charts/jquery.flot.resize.js')}}"></script>
-    <script src="{{url('assets/plugins/flot-charts/jquery.flot.pie.js')}}"></script>
-    <script src="{{url('assets/plugins/flot-charts/jquery.flot.categories.js')}}"></script>
-    <script src="{{url('assets/plugins/flot-charts/jquery.flot.time.js')}}"></script>
+    <script src="<?php echo e(url('assets/plugins/flot-charts/jquery.flot.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/plugins/flot-charts/jquery.flot.resize.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/plugins/flot-charts/jquery.flot.pie.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/plugins/flot-charts/jquery.flot.categories.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/plugins/flot-charts/jquery.flot.time.js')); ?>"></script>
 
     <!-- Custom Js -->
-    <script src="{{url('assets/js/admin.js')}}"></script>
-    <script src="{{url('assets/js/pages/index.js')}}"></script>
+    <script src="<?php echo e(url('assets/js/admin.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/js/pages/index.js')); ?>"></script>
 
     <!-- Demo Js -->
-    <script src="{{url('assets/js/demo.js')}}"></script>
-    <script src="{{url('assets/js/all.js')}}"></script>
+    <script src="<?php echo e(url('assets/js/demo.js')); ?>"></script>
+    <script src="<?php echo e(url('assets/js/all.js')); ?>"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
@@ -88,13 +88,13 @@ $(document).ready(function(){
 
 </head>
 
-@extends('templatee')
-@section('isi')
 
-    <div class="all-page-title" style="padding-top: 50px; padding-bottom: 150px; background-image:url('{{url('assets/img/pattern-4.png')}}');">
+<?php $__env->startSection('isi'); ?>
+
+    <div class="all-page-title" style="padding-top: 50px; padding-bottom: 150px; background-image:url('<?php echo e(url('assets/img/pattern-4.png')); ?>');">
         <div class="container text-center">
             <ul class="nav navbar-nav navbar-right hidden-md hidden-sm" style="align-items: center;">
-                <li><a href="{{url('/logout')}}" onclick="return confirm ('Are you Sure Want Logout {{Session::get('nama')}} ?')"><button type='button' class="btn-dark"><i class="fa fa-angle-double-left"></i>Log Out</button></a></li>
+                <li><a href="<?php echo e(url('/logout')); ?>" onclick="return confirm ('Are you Sure Want Logout <?php echo e(Session::get('nama')); ?> ?')"><button type='button' class="btn-dark"><i class="fa fa-angle-double-left"></i>Log Out</button></a></li>
             </ul>
         </div>
         <div class="container text-center">
@@ -111,33 +111,33 @@ $(document).ready(function(){
         <!--End Page-->
     </div><!-- end section -->
 
-@include('admin.awan.gaya_awan')
+<?php echo $__env->make('admin.awan.gaya_awan', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <body>
        <!-- Widgets -->
        <div class="container z-depth-3" style="padding-top: 30px; padding-bottom: 1px; min-height: 500px;">
             <div class="row clearfix">
-                <a href="{{url('/homeA')}}">
+                <a href="<?php echo e(url('/homeA')); ?>">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-pink hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">playlist_add_check</i>
                         </div>
                         <div class="content">
-                            <div class="text">Record Presence Today<br><center><h2 style="color:white;">{{$table}}</h2></center></div>
+                            <div class="text">Record Presence Today<br><center><h2 style="color:white;"><?php echo e($table); ?></h2></center></div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
                         </div>
                     </div>
                 </div>
                 </a>
-                <a href="{{url('/homeA')}}">
+                <a href="<?php echo e(url('/homeA')); ?>">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-cyan hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">help</i>
                         </div>
                         <div class="content">
-                            <div class="text">Record Activity Today<br><center><h2 style="color:white;">{{$Atable}}</h2></center></div>
+                            <div class="text">Record Activity Today<br><center><h2 style="color:white;"><?php echo e($Atable); ?></h2></center></div>
                             <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>
@@ -183,19 +183,20 @@ $(document).ready(function(){
                 </a>
                 </div>
             <!-- #END# Widgets -->
-            @if(\Session::has('alert'))
+            <?php if(\Session::has('alert')): ?>
                         <div class="alert alert-danger" align-center>
-                        <strong>{{Session::get('alert')}}</strong>
+                        <strong><?php echo e(Session::get('alert')); ?></strong>
                         </div>
-            @elseif(\Session::has('successalert'))
+            <?php elseif(\Session::has('successalert')): ?>
                 <div class="alert alert-success" align-center>
-                <strong>{{Session::get('successalert')}}</strong>
+                <strong><?php echo e(Session::get('successalert')); ?></strong>
                 </div>
-            @endif
+            <?php endif; ?>
 
 
-            <form method="post" action="{{url('/checkin')}}">
-            {{csrf_field()}}
+            <form method="post" action="<?php echo e(url('/checkin')); ?>">
+            <?php echo e(csrf_field()); ?>
+
                 <div class="card" id="attendance" style="display: none;">
                     <div class="container text-center">
                         <div class="row">
@@ -213,17 +214,18 @@ $(document).ready(function(){
                         <div class="row text-center">
                             <div class="col-sm-12 col-md-12 col-lg-12">
                                 <b><h3>Your Location</h3>
-                                    <input type="text" name="Idate" value="{{$maxD->date}}"  hidden>
+                                    <input type="text" name="Idate" value="<?php echo e($maxD->date); ?>"  hidden>
                                     <textarea style="border: none;" class="text-center" id="tampilkan" name="loc" readonly></textarea></b><br>
-                                <input type="submit" class="btn btn-success" name="checkin" value="Check In" {{$tmbl}}></input>&nbsp;<input type="submit" class="btn btn-danger" name="checkout" value="Check Out"></input>
+                                <input type="submit" class="btn btn-success" name="checkin" value="Check In" <?php echo e($tmbl); ?>></input>&nbsp;<input type="submit" class="btn btn-danger" name="checkout" value="Check Out"></input>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
 
-            <form method="post" action="{{url('/activityin')}}" enctype="multipart/form-data">
-            {{csrf_field()}}
+            <form method="post" action="<?php echo e(url('/activityin')); ?>" enctype="multipart/form-data">
+            <?php echo e(csrf_field()); ?>
+
                 <div class="card" id="activity" style="display:none;">
                     <div class="container text-center">
                         <div class="row">
@@ -243,10 +245,10 @@ $(document).ready(function(){
                                 <h3>Customer</h3>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-6">
-                               <select class="form-control" name="customer" {{$tmbll}}>
-                               @foreach($cust as $cust)
-                                    <option value="{{$cust -> namapt}}">{{$cust -> namapt}}</option>
-                               @endforeach
+                               <select class="form-control" name="customer" <?php echo e($tmbll); ?>>
+                               <?php $__currentLoopData = $cust; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cust): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($cust -> namapt); ?>"><?php echo e($cust -> namapt); ?></option>
+                               <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                               </select>
                             </div>
                             <div class="col-sm-1 col-md-1 col-lg-1">
@@ -265,8 +267,8 @@ $(document).ready(function(){
                             <div class="col-sm-12 col-md-12 col-lg-12">
                                 <b> <h3>Your Location</h3>
                                     <textarea style="border: none;" class="text-center" id="tampilkan2" name="loc" readonly></textarea></b><br>
-                                    <input type="file" accept="image/*" name="image" {{$tmbll}} required><br>
-                                <input type="submit" class="btn btn-success" name="activityin" value="Check In" {{$tmbll}}></input>&nbsp;
+                                    <input type="file" accept="image/*" name="image" <?php echo e($tmbll); ?> required><br>
+                                <input type="submit" class="btn btn-success" name="activityin" value="Check In" <?php echo e($tmbll); ?>></input>&nbsp;
                                 <input type="submit" class="btn btn-danger" name="activityout" value="Check Out"></input>
                             </div>
                         </div>
@@ -275,8 +277,9 @@ $(document).ready(function(){
                 </form>
 
                 <!-- add customer -->
-                <form method="post" action="{{url('/addcust')}}">
-                  {{csrf_field()}}
+                <form method="post" action="<?php echo e(url('/addcust')); ?>">
+                  <?php echo e(csrf_field()); ?>
+
                   <div class="card" id="addcust" style="display:none;">
                     <div class="container text-center">
                       <div class="row">
@@ -297,17 +300,18 @@ $(document).ready(function(){
                 </form>
                 <!-- end add customer -->
 
-                <form method="post" action="{{url('/leave')}}">
-                  {{csrf_field()}}
+                <form method="post" action="<?php echo e(url('/leave')); ?>">
+                  <?php echo e(csrf_field()); ?>
+
                   <div class="card" id="leaves" style="padding-top:50px; display:none;">
-                      <input type="text" name="IIdate" value="{{$leave->date}}" >
+                      <input type="text" name="IIdate" value="<?php echo e($leave->date); ?>" >
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-sm-2 col-md-2 col-lg-2">
                                 <h3>Types</h3>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-6">
-                               <select class="form-control" name="type" {{$tmbll}}>
+                               <select class="form-control" name="type" <?php echo e($tmbll); ?>>
                                     <option selected hidden value="Lainnya">Select Here</option>
                                     <option value="Izin">Izin</option>
                                     <option value="Sakit">Sakit</option>
@@ -370,10 +374,10 @@ $(document).ready(function(){
                                             <td>Riza Azhari</td>
                                             <td colspan="2">
                                                 <div class="progress">
-                                                    <div class="progress-bar bg-red" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: {{$operasional}}%"></div>
+                                                    <div class="progress-bar bg-red" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo e($operasional); ?>%"></div>
                                                 </div>
                                             </td>
-                                            <td><span class="label bg-red">{{$jmlO}}</span></td>
+                                            <td><span class="label bg-red"><?php echo e($jmlO); ?></span></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -381,10 +385,10 @@ $(document).ready(function(){
                                             <td>Yerry Tualena</td>
                                             <td colspan="2">
                                                 <div class="progress">
-                                                    <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{$sales}}%"></div>
+                                                    <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo e($sales); ?>%"></div>
                                                 </div>
                                             </td><td>
-                                            <span class="label bg-blue">{{$jmlS}}</span></td>
+                                            <span class="label bg-blue"><?php echo e($jmlS); ?></span></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -392,10 +396,10 @@ $(document).ready(function(){
                                             <td>Yustinus Mamik Julianto</td>
                                             <td colspan="2">
                                                 <div class="progress">
-                                                    <div class="progress-bar bg-light-green" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: {{$technical}}%"></div>
+                                                    <div class="progress-bar bg-light-green" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo e($technical); ?>%"></div>
                                                 </div>
                                             </td>
-                                            <td><span class="label bg-light-green">{{$jmlT}}</span></td>
+                                            <td><span class="label bg-light-green"><?php echo e($jmlT); ?></span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -441,8 +445,8 @@ $(document).ready(function(){
 
         var data = google.visualization.arrayToDataTable([
           ['Effort', 'Amount given'],
-          ['Male', {{$genderL}}],
-          ['Female',{{$genderP}}]
+          ['Male', <?php echo e($genderL); ?>],
+          ['Female',<?php echo e($genderP); ?>]
         ]);
 
         var options = {
@@ -521,4 +525,6 @@ function showError(error) {
 }
 */
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('templatee', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

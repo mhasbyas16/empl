@@ -76,6 +76,9 @@ class LoginController extends Controller
 
           $maxD=$qD->first();
           $maxA=$qA->first();
+
+           $leave=DB::table('leaves')->where('nip',$nip)->orderBy('id','desc')->limit('1')->first();
+
           //validasi daily
           if ($qD->count()==0 OR $maxD->outtime !="00:00:00") {
               $tmbl = '';
@@ -88,6 +91,7 @@ class LoginController extends Controller
           }elseif ($maxA->outtime =="00:00:00"){
               $tmbll = 'disabled';
           }
+
 
           $cust=DB::table('customer')->orderBY('namapt','asc')->get();
 
@@ -110,7 +114,8 @@ class LoginController extends Controller
                   'table'=>$table,
                   'Atable'=>$Atable,
                   'jmlusers'=>$jmlusers,
-                'maxD'=>$maxD]);
+                  'maxD'=>$maxD,
+                  'leave'=>$leave]);
 
       }
   }

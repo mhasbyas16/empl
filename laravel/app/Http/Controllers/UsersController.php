@@ -30,11 +30,11 @@ class UsersController extends Controller
       if (isset($req->checkin)) {
           if ($loc=='') {
               return redirect('/admin')->with('alert','Your Location Is Not Recognize !!!');
-         /* }elseif ($Idate == $date) {
+          }elseif ($Idate == $date) {
             return redirect('/admin')->with('alert','Your Are Already Absent Today!!!');
           }elseif ($intime >= '09:15:00') {
                 return redirect('/admin')->with('alert','Your Are Out Of Time!!!');
-          */}else{
+          }else{
           $save=['nip'=>$nip,'date'=>$date,'intime'=>$intime,'locin'=>$loc,'outtime'=>'00:00:00','locout'=>'','note'=>''];
 
           DB::table('daily')->insert($save);
@@ -277,6 +277,26 @@ class UsersController extends Controller
           DB::table('users')->update(['password'=>$spass]);
           Mail::to($email)->send(new ForgotPassword($nm,$email,$newpass));
           return redirect ('/')->with('alert',"Your Message Has Been Sent, Check Your Email For New Password");
+  }
+
+  public function Leave(Request $req){
+      $nip = Session::get('nip');
+      $hakakses = Session::get('hakakses');
+      $now = \Carbon\Carbon::now('Asia/Jakarta');
+      $date=$now->format('Y-m-d');
+      $intime = $now->format('H:i:s');
+      $reason = $req->reason;
+      $type=$req->type;
+      $IIdate=$req->IIdate;
+      
+      if ($IIdate==$date) {
+          return redirect('/admin')->with('alert','Your Are Already Leaves Today!!!');
+      }else {
+          $save=['nip'=>$nip,'date'=>$date,'type'=>$type,'reason'=>$reason];
+
+          DB::table('leaves')->insert($save);
+          return redirect('/admin')->with('successalert','Success Leaves');
+      }
   }
 
 }

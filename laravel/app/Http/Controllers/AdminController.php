@@ -146,7 +146,11 @@ class AdminController extends Controller
           }else{
           include "bulan.php";
           $isitbl=record::RecordDaily($date1,$date2)->orderBY('daily.date','asc')->orderBY('daily.intime','asc')->get();
-           $sum=DB::table('daily')->select('users.nama','daily.nip',DB::raw('count(*)as total'))->join('users','daily.nip','=','users.nip')->whereBetween('daily.date',[$date1,$date2])->groupBy('daily.nip','users.nama')->get();
+           $sum=DB::table('daily')->select('users.nama','daily.nip',DB::raw('count(*)as total'))->rightJoin('users','daily.nip','=','users.nip')->whereBetween('daily.date',[$date1,$date2])->groupBy('daily.nip','users.nama')->orderBy('users.nip','asc')->get();
+
+           $leave=DB::table('leaves')->join('users','leaves.nip','=','users.nip')->whereBetween('leaves.date',[$date1,$date2])->orderBY('leaves.date','asc')->get();
+           $sum2=DB::table('leaves')->select('users.nama','leaves.nip',DB::raw('count(*)as total'))->rightJoin('users','leaves.nip','=','users.nip')->whereBetween('leaves.date',[$date1,$date2])->groupBy('leaves.nip','users.nama')->orderBy('users.nip','asc')->get();
+
 
             if ($ex=='excel') {
              $export="<script type='text/javascript'>exportTabelKeCSV('Record_Attendance_".$date1."_".$date2.".csv')</script>";
@@ -165,7 +169,9 @@ class AdminController extends Controller
               'Abulan'=>$Abulan,
               'bbulan'=>$bbulan,
               'isitbl'=>$isitbl,
-              'sum'=>$sum]);
+              'leave'=>$leave,
+              'sum'=>$sum,
+                'sum2'=>$sum2]);
           }
       }
 

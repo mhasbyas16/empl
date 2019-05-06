@@ -26,6 +26,7 @@ Route::post('/searchactivity','UsersController@SearchActivity');//search di acti
 Route::post('/search','UsersController@ViewRecord');//hasil filter record_presence
 Route::post('/forgot','UsersController@forgotpassword');
 Route::get('/reset/{nm}/{email}/{sub}','UsersController@resetpassword');
+Route::post('/leave','UsersController@Leave');
 
 
 
