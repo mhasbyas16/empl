@@ -300,7 +300,7 @@ $(document).ready(function(){
                 <form method="post" action="{{url('/leave')}}">
                   {{csrf_field()}}
                   <div class="card" id="leaves" style="padding-top:50px; display:none;">
-                      <input type="text" name="IIdate" value="{{$leave->date}}" >
+                      <input type="text" name="IIdate" value="{{$leave->date}}" hidden>
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-sm-2 col-md-2 col-lg-2">
