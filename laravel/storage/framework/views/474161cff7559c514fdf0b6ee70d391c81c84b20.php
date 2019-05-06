@@ -304,7 +304,7 @@ $(document).ready(function(){
                   <?php echo e(csrf_field()); ?>
 
                   <div class="card" id="leaves" style="padding-top:50px; display:none;">
-                      <input type="text" name="IIdate" value="<?php echo e($leave->date); ?>" >
+                      <input type="text" name="IIdate" value="<?php echo e($leave->date); ?>" hidden>
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-sm-2 col-md-2 col-lg-2">

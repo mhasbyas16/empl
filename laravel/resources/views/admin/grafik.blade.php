@@ -176,7 +176,7 @@ $(document).ready(function(){
                             <i class="material-icons">nature_people</i>
                         </div>
                         <div class="content">
-                            <div class="text">Activity</div>
+                            <div class="text">Leaves</div>
                         </div>
                     </div>
                 </div>
