@@ -288,7 +288,7 @@ class UsersController extends Controller
       $reason = $req->reason;
       $type=$req->type;
       $IIdate=$req->IIdate;
-      
+
       if ($IIdate==$date) {
           return redirect('/admin')->with('alert','Your Are Already Leaves Today!!!');
       }else {
